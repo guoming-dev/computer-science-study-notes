@@ -21,4 +21,4 @@ Each week's material is structured using the **Metalearning Framework (WHY, WHAT
 - ✅ Write and modify code for **hands-on learning**.
 - ✅ Build small **mini-projects** to reinforce concepts.
 
-📩 Have suggestions or questions? Reach out via [email](mailto:gm_learning_tech@outlook.com)
+📩 Have suggestions or questions? Reach out via [email](mailto:gm_learning_tech@outlook.com).
