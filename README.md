@@ -53,9 +53,13 @@ Future additions may include:
 ## 🚀 How to Learn from These Notes
 
 1️⃣ **Follow the Metalearning Notes** - Start with the WHY, then understand WHAT, and practice the HOW.
+
 2️⃣ **Apply the Feynman Technique** - Try explaining concepts in your own words to check your understanding.
+
 3️⃣ **Experiment with Code** - Don't just read-**write and modify code** to see how it works.
+
 4️⃣ **Build Projects** - Apply what you learn by creating small projects along the way.
+
 5️⃣ **Iterate & Expand** - Keep refining and adding to your knowledge over time.
 
 ___
