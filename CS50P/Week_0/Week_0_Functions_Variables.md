@@ -1,10 +1,10 @@
-## CS50P Week 0 - Functions, Variables
+# CS50P Week 0 - Functions, Variables
 
 🎯 Topic: Functions, Variables, and Command Line Basics
 
 ---
 
-### 🧠 WHY Learn This?
+## 🧠 WHY Learn This?
 
 Programming is a **powerful tool** for solving problems, automating tasks, and building software.
 Python, in particular, is widely used for:
@@ -18,9 +18,9 @@ Understanding **how a computer executes code** will help you become a better pro
 
 ---
 
-### 📌 WHAT You Need to Learn
+## 📌 WHAT You Need to Learn
 
-#### 1️⃣ What is a Program?
+### 1️⃣ What is a Program?
 
 A **program** is a set of instructions that a computer follows to perform a task.
 
@@ -31,7 +31,7 @@ A **program** is a set of instructions that a computer follows to perform a task
 
 ---
 
-#### 2️⃣ What is Python?
+### 2️⃣ What is Python?
 
 Python is a **high-level, interpreted programming language** known for its **simplicity and readability**.
 
@@ -46,7 +46,7 @@ Python is a **high-level, interpreted programming language** known for its **sim
 
 ---
 
-#### 3️⃣ Setting Up Python & Your First Program
+### 3️⃣ Setting Up Python & Your First Program
 
 Before we start coding, we need to set up the **Python environment**.
 
@@ -76,7 +76,7 @@ python hello.py
 
 ---
 
-#### 4️⃣ Understanding the Command Line Interface (CLI)
+### 4️⃣ Understanding the Command Line Interface (CLI)
 
 The **Command Line Interface (CLI)** is a way to interact with a computer using **text-based commands** instead of clicking icons.
 
@@ -111,7 +111,7 @@ The **Command Line Interface (CLI)** is a way to interact with a computer using 
 
 ---
 
-#### 5️⃣ Functions & Variables
+### 5️⃣ Functions & Variables
 
 **📌 What is a Function?**
 
@@ -167,7 +167,7 @@ print(x, name)
 
 ---
 
-#### 6️⃣ Debugging & Common Errors
+### 6️⃣ Debugging & Common Errors
 
 **🛠️ Types of Errors in Python**
 
@@ -201,9 +201,9 @@ print(x, name)
 
 ---
 
-### 🚀 HOW to Learn This?
+## 🚀 HOW to Learn This?
 
-#### Step 1: Watch the Lecture & Take Notes
+### Step 1: Watch the Lecture & Take Notes
 
 🎥 Watch CS50P's Week 0 Lecture → Write down key ideas:
 - ✅ Python is interpreted, not compiled.
@@ -213,7 +213,7 @@ print(x, name)
 
 ---
 
-#### Step 2: Hands-on Coding
+### Step 2: Hands-on Coding
 **✅ Write this simple program:**
 ```python
 name = input("What's your name? ")
@@ -229,7 +229,7 @@ print(f"Hello, {name}!")
 
 ---
 
-#### Step 3: Debugging Practice
+### Step 3: Debugging Practice
 
 🔎 Fix this broken code:
 ```python
@@ -239,7 +239,7 @@ print("Hello, world!"
 
 ---
 
-#### Step 4: Mastery Checklist
+### Step 4: Mastery Checklist
 
 - ✅ I installed Python and VS Code
 - ✅ I ran my first Python program (`print()`)
