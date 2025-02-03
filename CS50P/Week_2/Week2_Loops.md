@@ -170,4 +170,4 @@ Practice with real-world examples:
 - ✅ I have debugged infinite loops and off-by-one errors.
 - ✅ I have implemented **nested loops** for patterns.
 
-*This guide will help you master loops and improve your coding skills 🚀*
+*This guide will help you master loops and improve your coding skills. 🚀*
