@@ -241,8 +241,8 @@ print("Hello, world!"
 
 ### Step 4: Mastery Checklist
 
-- ✅ I installed Python and VS Code
-- ✅ I ran my first Python program (`print()`)
-- ✅ I understand how Python executes code line by line
-- ✅ I used variables to store values
-- ✅ I fixed at least one syntax error
+- ✅ I installed Python and VS Code.
+- ✅ I ran my first Python program (`print()`).
+- ✅ I understand how Python executes code line by line.
+- ✅ I used variables to store values.
+- ✅ I fixed at least one syntax error.
