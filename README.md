@@ -47,6 +47,7 @@ Currently, I am focusing on **CS50's Introduction to programming with Python (CS
 Future additions may include:
 - **Books** (Summaries and insights from Computer Science books)
 - **Courses** (Metalearning Notes from other courses)
+- **Cheat Sheets** (Summarise Notes/Cheat Sheet for other topics)
 
 ---
 
