@@ -39,6 +39,7 @@ This folder is structured based on **Scott H. Young**'s Ultralearning principles
 ### 1️⃣ Metalearning: Understand the Big Picture
 
 - 📚 **Read** `git_metalearning.md` to understand why Git is important and how to learn it effectively.
+- 📖 **Study** `basic_git_commands.md` to learn foundational Git commands essential for everyday use.
 
 ---
 
