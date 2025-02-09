@@ -17,10 +17,10 @@ This folder contains my **Git learning journey**, including:
 
 - 📜 `git_cheat_sheet.md` - A handy Git cheat sheet with commonly used commands in projects.
 - 🧠 `git_metalearning.md` - Understanding the **why and how** of learning Git strategically.
+- ⌨️ `basic_git_commands.md` - Fundamental Git commands and their usage.
 
 *Note: The following files are still being created and will be updated progressively.*
 
-- ⌨️ `basic_git_commands.md` - Fundamental Git commands and their usage.
 - 🎯 `git_exercises.md` - Hands-on practice exercises for active retrieval.
 - 🔁 `git_flashcards.md` - A collection of Q&A-based Git concepts for spaced repetition.
 - 🧑‍🏫 `git_feynman_explained.md` - Explaining Git using the **Feynman Technique**.
