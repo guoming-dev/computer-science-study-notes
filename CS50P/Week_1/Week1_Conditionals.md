@@ -29,8 +29,6 @@ Python provides several operators to compare values:
 - `==` (equal to)
 - `!=` (not equal to)
 
----
-
 ### 2️⃣ Boolean Expressions
 
 These expressions evaluate to `True` or `False`, which are fundamental in decision-making.
@@ -41,8 +39,6 @@ y = 10
 print(x < 5) # Output: True
 ```
 
----
-
 ### 3️⃣ The `if` Statement
 
 A simple decision-making construct:
@@ -51,8 +47,6 @@ A simple decision-making construct:
 if x < y:
     print("x is smaller than y")
 ```
-
----
 
 ### 4️⃣ The `if-else` Statement
 
@@ -64,8 +58,6 @@ if x < y:
 else:
     print("x is greater or equal")
 ```
-
----
 
 ### 5️⃣ The `elif` Statement
 
@@ -80,8 +72,6 @@ else:
     print("x is smaller")
 ```
 
----
-
 ### 6️⃣ Logical Operators (`and`, `or`, `not`)
 
 Combining multiple conditions:
@@ -93,8 +83,6 @@ income = 50000
 if age > 18 and income > 30000:
     print("Eligible for loan")
 ```
-
----
 
 ### 7️⃣ The `match` Statement (Python 3.10+)
 
@@ -124,8 +112,6 @@ match color:
 - 📖 Study flowcharts to **visualize decision-making**.
 - 🤓 Explain conditionals in **plain English** to yourself (*Feynman Technique*).
 
----
-
 ### Step 2: Write Small Programs:
 
 Practice with real-world examples:
@@ -134,14 +120,10 @@ Practice with real-world examples:
 - 🌡️ Temperature Check: Print a message based on a given temperature.
 - 🧮 Basic Calculator: Perform different operations based on user input.
 
----
-
 ### Step 3: Debug Your Code
 
 - ⚠️ Remove indentation and see what error appears.
 - ⚡️ Try using `=` instead of `==` in conditions to understand assignment vs comparison.
-
----
 
 ### Step 4: Optimize Using `elif` and `match`
 

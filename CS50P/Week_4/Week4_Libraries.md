@@ -26,8 +26,6 @@ By mastering **modules and libraries**, you will:
 
 Python **comes with built-in modules**, but you can also **install third-party libraries** to extend functionality.
 
----
-
 ### 2️⃣ Importing Modules in Python
 
 Use `import` to access modules:
@@ -38,8 +36,6 @@ from random import choice  # Import a specific function
 ```
 
 💡 **Key Point**: `import module_name` gives access to all functions, while `from module import function` allows calling functions directly.
-
----
 
 ### 3️⃣ Using Built-in Libraries
 
@@ -55,8 +51,6 @@ import statistics
 data = [100, 90, 80]
 print(statistics.mean(data))  # Outputs the average
 ```
-
----
 
 ### 4️⃣ Installing and Using Third-Party Libraries
 
@@ -75,8 +69,6 @@ cowsay.cow("Hello, World!")
 
 💡 **Key Point**: Third-party libraries **extend** Python's functionality (e.g., data analysis, web scraping, AI).
 
----
-
 ### 5️⃣ Command-Line Arguments with `sys` Module
 
 Instead of using `input()`, **command-line arguments** allow users to pass values when running a script.
@@ -93,13 +85,11 @@ python script.py Alice
 
 💡 **Output**: `Hello, Alice`
 
----
-
 ### 6️⃣ Making Your Own Python Module
 
 If you reuse functions across projects, **create your own module**.
 
-**1️⃣ Create a file `greetings.py`**:
+**1️. Create a file `greetings.py`**:
 ```python
 def hello(name):
     print(f"Hello, {name}!")
@@ -108,7 +98,7 @@ def goodbye(name):
     print(f"Goodbye, {name}!")
 ```
 
-**2️⃣ Use it in another script**:
+**2️. Use it in another script**:
 ```python
 from greetings import hello, goodbye
 
@@ -128,15 +118,11 @@ goodbye("Bob")
 - 🔎 Explore `sys.argv` to accept **command-line arguments**.
 - 📄 Practice **importing your own functions** from a separate file.
 
----
-
 ### Step 2: Work with Built-in and Third-Party Libraries
 
 - 🎲 Use `random.choice()` to randomly pick from a list.
 - 📊 **Calculate mean, median, mode** using `statistics`.
 - 🐮 Install `cowsay` and generate ASCII art.
-
----
 
 ### Step 3: Build Your Own Module
 

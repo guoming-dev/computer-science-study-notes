@@ -52,8 +52,6 @@ By mastering exception handling, you will:
     </tr>
 </table>
 
----
-
 ### 2️⃣ Using `try` and `except` for Error Handling
 
 Python provides `try` and `except` to **catch and handle errors**.
@@ -67,8 +65,6 @@ except ValueError:
 ```
 
 If the user enters `"cat"`, the program **won't crash**. Instead, it will print a friendly message.
-
----
 
 ### 3️⃣ Catching Specific Errors
 
@@ -86,8 +82,6 @@ except ZeroDivisionError:
 
 💡 **Key Point**: Multiple `except` blocks handle different types of errors separately.
 
----
-
 ### 4️⃣ Using `else` with `try-except`
 
 If no error occurs, use `else` to execute code **only when everything goes well**.
@@ -100,8 +94,6 @@ except ValueError:
 else:
     print(f"x is {x}")  # Runs only if `try` succeeds
 ```
-
----
 
 ### 5️⃣ Using `finally`
 
@@ -118,8 +110,6 @@ finally:
 ```
 
 💡 **Key Point**: `finally` is useful for **cleanup operations** like closing files or database connections.
-
----
 
 ### 6️⃣ Handling Loops with Exception Handling
 
@@ -144,23 +134,17 @@ while True:
 - 🔍 **Identify patterns** in error messages (e.g., `ValueError`, `ZeroDivisionError`).
 - Practice explaining errors in **plain English** using *Feynman Technique*.
 
----
-
 ### Step 2: Experiment with `try-except`
 
 - 🛠️ Modify the code to **catch multiple types of errors**.
 - ⏭️ Test `except Exception:` to **catch all errors** (but avoid overusing it).
 - 📌 Use `else` and `finally` to **see when they execute**.
 
----
-
 ### Step 3: Refactor and Optimize
 
 - Replace **manual input validation** with exception handling.
 - Move repeated error-handling code into **functions**.
 - Improve user experience with **clearer error messages**.
-
----
 
 ## 📝 Summary and Key Insights
 

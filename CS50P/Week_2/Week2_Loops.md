@@ -31,8 +31,6 @@ while i > 0:
 
 💡 **Key Point**: Be careful of infinite loops (when the condition never becomes `False`).
 
----
-
 ### 2️⃣ The `for` Loop
 
 Iterates **over a sequence** (e.g., list, range, string).
@@ -43,8 +41,6 @@ for i in range(3):
 ```
 
 💡 **Key Point**: The `range(n)` function generates numbers from `0` to `n-1`.
-
----
 
 ### 3️⃣ Loop Control Statements
 
@@ -72,8 +68,6 @@ for i in range(3):
     pass  # To be implemented later
 ```
 
----
-
 ### 4️⃣ Nested Loops
 
 Loops inside loops, useful for **2D grids, matrices, and tables**.
@@ -84,8 +78,6 @@ for i in range(3):  # Rows
         print("#", end=" ")
     print()
 ```
-
----
 
 ### 5️⃣ Looping Over Data Structures
 
@@ -115,8 +107,6 @@ for student, house in houses.items():
 - 📝 Explain loops **in plain English** using the **Feynman Technique**.
 - 📽️ Watch animations of loop execution (e.g., visualizing flowcharts).
 
----
-
 ### Step 2: Write Small Programs:
 
 Practice with real-world examples:
@@ -125,15 +115,11 @@ Practice with real-world examples:
 - 🏆 **User input validation**: Keep asking for a **positive number**.
 - 🎰 **Number guessing game**: Keep looping until the user guesses correctly.
 
----
-
 ### Step 3: Debug and Optimize
 
 - 🔥 Find **infinite loops** by adding print statements inside loops.
 - ⚠️ Try `break` vs `continue` to understand how they control loops.
 - ⚡️ **Refactor repetitive code** into loops for cleaner solutions.
-
----
 
 ### Step 4: Experiment with `range()` and Nested Loops
 

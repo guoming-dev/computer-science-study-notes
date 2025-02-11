@@ -29,8 +29,6 @@ A **program** is a set of instructions that a computer follows to perform a task
 
 **💡 Computers only understand binary (0s and 1s), but we write code in human-readable languages, which are later translated into binary.**
 
----
-
 ### 2️⃣ What is Python?
 
 Python is a **high-level, interpreted programming language** known for its **simplicity and readability**.
@@ -43,8 +41,6 @@ Python is a **high-level, interpreted programming language** known for its **sim
 - **✅ Cross-platform**: Works on Windows, macOS, Linux.
 
 **💡 Unlike compiled languages (C, Java), Python is an interpreted language, meaning it runs line-by-line rather than being compiled into machine code.**
-
----
 
 ### 3️⃣ Setting Up Python & Your First Program
 
@@ -73,8 +69,6 @@ python hello.py
 ```
 
 **💡 Python executes code from top to bottom, line by line.**
-
----
 
 ### 4️⃣ Understanding the Command Line Interface (CLI)
 
@@ -108,8 +102,6 @@ The **Command Line Interface (CLI)** is a way to interact with a computer using 
 </table>
 
 **💡 Python can be run using interactive mode (`python`) or by executing a script (`python file.py`).**
-
----
 
 ### 5️⃣ Functions & Variables
 
@@ -165,8 +157,6 @@ print(x, name)
     </tr>
 </table>
 
----
-
 ### 6️⃣ Debugging & Common Errors
 
 **🛠️ Types of Errors in Python**
@@ -211,8 +201,6 @@ print(x, name)
 - ✅ Functions store reusable logic.
 - ✅ Variables hold different types of data.
 
----
-
 ### Step 2: Hands-on Coding
 **✅ Write this simple program:**
 ```python
@@ -227,8 +215,6 @@ print(f"Hello, {name}!")
 
 **💡 Use `.strip()` to remove extra spaces and `.title()` to capitalize names.**
 
----
-
 ### Step 3: Debugging Practice
 
 🔎 Fix this broken code:
@@ -236,8 +222,6 @@ print(f"Hello, {name}!")
 print("Hello, world!"
 ```
 **✅ Solution:** Add the missing closing parenthesis.
-
----
 
 ### Step 4: Mastery Checklist
 
