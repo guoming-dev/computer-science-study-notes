@@ -1,7 +1,6 @@
 # Import Random
 import random
 
-
 def get_level():
     """
     1. Prompt the user for a level (n)
@@ -19,7 +18,6 @@ def get_level():
         except ValueError:
             # Handle non-integer inputs
             print("Invalid input. Please enter a number.")
-
 
 def generate_integer(level):
     """
