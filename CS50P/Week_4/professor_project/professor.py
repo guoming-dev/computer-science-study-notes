@@ -85,6 +85,5 @@ def main():
     # 4. Display the final score out of 10.
     print(f"Score: {score}")
 
-
 if __name__ == "__main__":
     main()
