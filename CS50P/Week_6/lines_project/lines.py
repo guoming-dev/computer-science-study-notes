@@ -1,6 +1,5 @@
 # Import necessary modules
 #   - sys: to access command-line arguments and exit the program
-#   - os: to check if the file exists
 import sys
 from pathlib import Path
 
