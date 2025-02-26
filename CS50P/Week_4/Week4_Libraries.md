@@ -31,8 +31,10 @@ Python **comes with built-in modules**, but you can also **install third-party l
 Use `import` to access modules:
 
 ```python
-import random  # Import the entire module
-from random import choice  # Import a specific function
+# Import the entire module
+import random  
+# Import a specific function
+from random import choice  
 ```
 
 💡 **Key Point**: `import module_name` gives access to all functions, while `from module import function` allows calling functions directly.
@@ -42,14 +44,16 @@ from random import choice  # Import a specific function
 **Random Module**: Generates random values.
 ```python
 import random
-print(random.randint(1, 10))  # Random number between 1 and 10
+# Random number between 1 and 10
+print(random.randint(1, 10))  
 ```
 
 **Statistics Module**: Performs statistical calculations.
 ```python
 import statistics
 data = [100, 90, 80]
-print(statistics.mean(data))  # Outputs the average
+# Outputs the average
+print(statistics.mean(data))  
 ```
 
 ### 4️⃣ Installing and Using Third-Party Libraries
@@ -58,7 +62,8 @@ Python has **thousands of third-party libraries** that you can install via **pip
 
 **Installing a package**:
 ```bash
-pip install cowsay  # Example package for ASCII art
+# Example package for ASCII art
+pip install cowsay  
 ```
 
 **Using the package**:
@@ -75,7 +80,8 @@ Instead of using `input()`, **command-line arguments** allow users to pass value
 
 ```python
 import sys
-print("Hello,", sys.argv[1])    # Takes the first argument from the command line
+# Takes the first argument from the command line
+print("Hello,", sys.argv[1])    
 ```
 
 **Run the script**:
