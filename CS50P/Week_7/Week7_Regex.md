@@ -44,44 +44,138 @@ re.sub(pattern, replacement, string)
 
 Regular expressions use **special symbols** to define patterns.
 
-| Pattern  | Description                          | Example  |
-|----------|--------------------------------------|------------------------------------------------------|
-| `.`      | Matches any character except newline | `"h.t"` matches `"hat"`, `"hit"`, `"hot"` |
-| `*`      | Matches 0 or more repetitions        | `"ca*t"` matches `"ct"`, `"cat"`, `"caaaat"` |
-| `+`      | Matches 1 or more repetitions        | `"ca+t"` matches `"cat"`, `"caaaat"` but **not** `"ct"` |
-| `?`      | Matches 0 or 1 repetition            | `"colou?r"` matches `"color"` and `"colour"` |
-| `{m,n}`  | Matches m to n repetitions          | `"a{2,4}"` matches `"aa"`, `"aaa"`, `"aaaa"` but **not** `"a"` |
-
+<table>
+    <tr>
+        <th>Pattern</th>
+        <th>Description</th>
+        <th>Example</th>
+    </tr>
+    <tr>
+        <td><code>.</code></td>
+        <td>Matches any character except newline</td>
+        <td><code>"h.t"</code> matches <code>"hat"</code>, <code>"hit"</code>, <code>"hot"</code></td>
+    </tr>
+    <tr>
+        <td><code>*</code></td>
+        <td>Matches 0 or more repetitions</td>
+        <td><code>"ca*t"</code> matches <code>"ct"</code>, <code>"cat"</code>, <code>"caaaat"</code></td>
+    </tr>
+    <tr>
+        <td><code>+</code></td>
+        <td>Matches 1 or more repetitions</td>
+        <td><code>"ca+t"</code> matches <code>"cat"</code>, <code>"caaaat"</code> but <b>not</b> <code>"ct"</code></td>
+    </tr>
+    <tr>
+        <td><code>?</code></td>
+        <td>Matches 0 or 1 repetition</td>
+        <td><code>"colou?r"</code> matches <code>"color"</code> and <code>"colour"</code></td>
+    </tr>
+    <tr>
+        <td><code>{m,n}</code></td>
+        <td>Matches m to n repetitions</td>
+        <td><code>"a{2,4}"</code> matches <code>"aa"</code>, <code>"aaa"</code>, <code>"aaaa"</code> but <b>not</b> <code>"a"</code></td>
+    </tr>
+</table>
 
 ### 3️⃣ Character Sets and Groups
 
 You can define sets of characters inside `[]`.
 
-| Pattern  | Description                          | Example  |
-|----------|--------------------------------------|----------------------------------------------------------|
-| `[abc]`  | Matches one of `a`, `b`, or `c`     | `"[abc]"` matches `"bat"` but **not** `"xyz"` |
-| `[a-z]`  | Matches any lowercase letter        | `"h[a-z]t"` matches `"hat"`, `"hit"`, `"hot"` |
-| `[^t]`   | Matches any character **except** `t` | `"[^t]"` matches `"bear"` but **not** `"beat"` |
-| `(abc)`  | Capturing group (extracts substring) | `"(Mr|Ms)\. [A-Z][a-z]+"` matches `"Mr. Smith"`, `"Ms. Taylor"` but **not** `"Dr. Brown"` |
-
+<table>
+    <tr>
+        <th>Pattern</th>
+        <th>Description</th>
+        <th>Example</th>
+    </tr>
+    <tr>
+        <td><code>[abc]</code></td>
+        <td>Matches one of <code>a</code>, <code>b</code>, or <code>c</code></td>
+        <td><code>"[abc]"</code> matches <code>"bat"</code> but <b>not</b> <code>"xyz"</code></td>
+    </tr>
+    <tr>
+        <td><code>[a-z]</code></td>
+        <td>Matches any lowercase letter</td>
+        <td><code>"h[a-z]t"</code> matches <code>"hat"</code>, <code>"hit"</code>, <code>"hot"</code></td>
+    </tr>
+    <tr>
+        <td><code>[^t]</code></td>
+        <td>Matches any character <b>except</b> <code>t</code></td>
+        <td><code>"[^t]"</code> matches <code>"bear"</code> but <b>not</b> <code>"beat"</code></td>
+    </tr>
+    <tr>
+        <td><code>(abc)</code></td>
+        <td>Capturing group (extracts substring)</td>
+        <td><code>"(Mr|Ms)\. [A-Z][a-z]+"</code> matches <code>"Mr. Smith"</code> and <code>"Ms. Taylor"</code> but <b>not</b> <code>"Dr. Brown"</code></td>
+    </tr>
+</table>
 
 ### 4️⃣ Anchors for Position Matching
 
-| Pattern  | Description                  | Example  |
-|----------|------------------------------|----------------------------------------------------------|
-| `^`      | Matches **start** of string  | `"^Hello"` matches `"Hello world"` but **not** `"World Hello"` |
-| `$`      | Matches **end** of string    | `"world$"` matches `"Hello world"` but **not** `"worldwide"` |
+<table>
+    <tr>
+        <th>Pattern</th>
+        <th>Description</th>
+        <th>Example</th>
+    </tr>
+    <tr>
+        <td><code>^</code></td>
+        <td>Matches <b>start</b> of string</td>
+        <td><code>"^Hello"</code> matches <code>"Hello world"</code> but <b>not</b> <code>"World Hello"</code></td>
+    </tr>
+    <tr>
+        <td><code>$</code></td>
+        <td>Matches <b>end</b> of string</td>
+        <td><code>"world$"</code> matches <code>"Hello world"</code> but <b>not</b> <code>"worldwide"</code></td>
+    </tr>
+</table>
 
 ### 5️⃣ Shorthand Character Classes
 
-| **Pattern** | **Equivalent To** | **Example** | **Explanation** |
-|------------|-----------------|------------|----------------|
-| `\d` | `[0-9]` (any digit) | `"\d{4}"` matches `"2023"` | Matches any **digit (0-9)**. |
-| `\D` | `[^0-9]` (not a digit) | Matches `"hello"` but **not** `"123"` | Matches any **non-digit** character. |
-| `\s` | `[ \t\n\r\f\v]` (whitespace) | Matches spaces and tabs | Matches any **whitespace character** (spaces, tabs, newlines). |
-| `\S` | `[^\s]` (non-whitespace) | Matches `"a"`, `"b"`, `"c"` in `"abc 123"` | Matches any **non-whitespace character**, including letters, numbers, and symbols. |
-| `\w` | `[a-zA-Z0-9_]` (word character) | Matches `"hello123"` but **not** `"@#$"` | Matches **letters, digits, and underscores** (no spaces or symbols). |
-| `\W` | `[^\w]` (non-word character) | Matches `"@"`, `"#"`, `" "` (space) | Matches any **character that is NOT a letter, digit, or underscore** (includes spaces and punctuation). |
+<table>
+    <tr>
+        <th>Pattern</th>
+        <th>Equivalent To</th>
+        <th>Example</th>
+        <th>Explanation</th>
+    </tr>
+    <tr>
+        <td><code>\d</code></td>
+        <td><code>[0-9]</code> (any digit)</td>
+        <td><code>"\d{4}"</code> matches <code>"2023"</code></td>
+        <td>Matches any <b>digit (0-9)</b>.</td>
+    </tr>
+    <tr>
+        <td><code>\D</code></td>
+        <td><code>[^0-9]</code> (not a digit)</td>
+        <td>Matches <code>"hello"</code> but <b>not</b> <code>"123"</code></td>
+        <td>Matches any <b>non-digit</b> character.</td>
+    </tr>
+    <tr>
+        <td><code>\s</code></td>
+        <td><code>[ \t\n\r\f\v]</code> (whitespace)</td>
+        <td>Matches spaces and tabs</td>
+        <td>Matches any <b>whitespace character</b> (spaces, tabs, newlines).</td>
+    </tr>
+    <tr>
+        <td><code>\S</code></td>
+        <td><code>[^\s]</code> (non-whitespace)</td>
+        <td>Matches <code>"a"</code>, <code>"b"</code>, <code>"c"</code> in <code>"abc 123"</code></td>
+        <td>Matches any <b>non-whitespace</b> character, including letters, numbers, and symbols.</td>
+    </tr>
+    <tr>
+        <td><code>\w</code></td>
+        <td><code>[a-zA-Z0-9_]</code> (word character)</td>
+        <td>Matches <code>"hello123"</code> but <b>not</b> <code>"@#$"</code></td>
+        <td>Matches <b>letters, digits, and underscores</b> (no spaces or symbols).</td>
+    </tr>
+    <tr>
+        <td><code>\W</code></td>
+        <td><code>[^\w]</code> (non-word character)</td>
+        <td>Matches <code>"@"</code>, <code>"#"</code>, <code>" "</code> (space)</td>
+        <td>Matches any <b>character that is NOT</b> a letter, digit, or underscore (includes spaces and punctuation).</td>
+    </tr>
+</table>
+
 
 ### 6️⃣ Using `re` Functions
 
@@ -91,26 +185,25 @@ import re
 
 text = "My email is user@example.com"
 pattern = r"\w+@\w+\.\w+"  # Basic email pattern
-
 match = re.search(pattern, text)
 if match:
-    print("Found:", match.group())  # Output: user@example.com
+    # Output: user@example.com
+    print("Found:", match.group())
 ```
 
 **Extracting All Matches**
 ```python
 text = "Emails: alice@mail.com, bob@work.org"
 pattern = r"\w+@\w+\.\w+"
-
 matches = re.findall(pattern, text)
-print(matches)  # Output: ['alice@mail.com', 'bob@work.org']
+# Output: ['alice@mail.com', 'bob@work.org']
+print(matches)
 ```
 
 **Replacing Text** (`re.sub`)
 ```python
 text = "My phone is 123-456-7890"
 pattern = r"\d{3}-\d{3}-\d{4}"
-
 new_text = re.sub(pattern, "XXX-XXX-XXXX", text)
 print(new_text)  # Output: My phone is XXX-XXX-XXXX
 ```
@@ -119,9 +212,9 @@ print(new_text)  # Output: My phone is XXX-XXX-XXXX
 ```python
 text = "Apples, Bananas; Oranges | Mangoes"
 pattern = r"[,;|]"
-
+# Output: ['Apples', ' Bananas', ' Oranges ', ' Mangoes']
 fruits = re.split(pattern, text)
-print(fruits)  # Output: ['Apples', ' Bananas', ' Oranges ', ' Mangoes']
+print(fruits)
 ```
 
 ---
