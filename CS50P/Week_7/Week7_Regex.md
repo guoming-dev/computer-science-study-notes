@@ -71,6 +71,11 @@ Regular expressions use **special symbols** to define patterns.
         <td><code>"colou?r"</code> matches <code>"color"</code> and <code>"colour"</code></td>
     </tr>
     <tr>
+        <td><code>{m}</code></td>
+        <td>Matches m repetitions</td>
+        <td><code>"a{2}"</code> matches <code>"aa"</code> but <b>not</b> <code>"a"</code>, <code>"aaa"</code>, <code>"aaaa"</code></td>
+    </tr>
+    <tr>
         <td><code>{m,n}</code></td>
         <td>Matches m to n repetitions</td>
         <td><code>"a{2,4}"</code> matches <code>"aa"</code>, <code>"aaa"</code>, <code>"aaaa"</code> but <b>not</b> <code>"a"</code></td>
