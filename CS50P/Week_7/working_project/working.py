@@ -2,10 +2,8 @@ import re
 
 def convert(s):
     # Use named groups in regex for better readabilty
-    match = re.fullmatch(
-        r"(?P<h1>\d{1,2})(?::(?P<m1>\d{2}))? (?P<period1>AM|PM) to (?P<h2>\d{1,2})(?::(?P<m2>\d{2}))? (?P<period2>AM|PM)",
-        s
-    )
+    pattern = r"(?P<h1>\d{1,2})(?::(?P<m1>\d{2}))? (?P<period1>AM|PM) to (?P<h2>\d{1,2})(?::(?P<m2>\d{2}))? (?P<period2>AM|PM)"
+    match = re.fullmatch(pattern, s)
 
     if not match:
         raise ValueError("Invalid time format")
