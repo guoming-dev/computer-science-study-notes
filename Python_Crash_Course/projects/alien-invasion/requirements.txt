@@ -16,6 +16,7 @@ pillow==11.1.0
 pluggy==1.5.0
 pycparser==2.22
 pydyf==0.11.0
+pygame==2.6.1
 pyphen==0.17.2
 pytest==8.3.4
 tinycss2==1.4.0
