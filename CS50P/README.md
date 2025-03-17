@@ -5,10 +5,12 @@ This folder contains my **study notes, solutions to the problem sets, and insigh
 Each week's material is structured using the **Metalearning Framework (WHY, WHAT, HOW)** to reinforce deep understanding.
 
 **📚 Course Structure**:
-```
+```markdown
 /CS50P
     |--- README.md (this file)
-    |--- Week_0
+    |--- Week_0/
+         |--- code/ (problem sets solutions)
+         |--- notes/ (metalearning notes for each week lecture)
     |--- Week_1
     |--- Week_2
     |--- ...
