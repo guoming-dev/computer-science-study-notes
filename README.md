@@ -31,16 +31,16 @@ Each folder represents a **different learning resource** I’m using (e.g., CS50
 
 ## 📂 Repository Structure
 
-Currently, I am focusing on **CS50's Introduction to programming with Python (CS50P)**. More folders will be added as I explore new topics.
+Currently, I am working on projects from **Python Crash Course (3rd Edition)**. More folders will be added as I explore new topics.
 
-```
+```markdown
 /computer-science-study-notes
     |--- README.md (this file)
-    |--- CS50P/ (Notes and exercises from Harvard's CS50P course)
-         |--- Week_0
-         |--- Week_1
-         |--- Week_2
-         |--- ...
+    |--- CS50P/ (Notes and exercises from *Harvard's CS50P course*)
+    |--- Python_Crash_Course/ (Projects from *Python Crash Course (3rd Edition)*)
+         |--- projects
+              |--- alien-invasion/ (Project files and metalearning notes)
+              |--- More projects to be added...
     |--- (More folders to be added as I progress)
 ```
 
