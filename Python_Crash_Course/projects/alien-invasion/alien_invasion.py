@@ -29,7 +29,6 @@ class AlienInvasion:
         self.raindrops = pygame.sprite.Group()
 
         self._create_fleet()
-        self._create_fleet_raindrop()
 
     def run_game(self):
         """Start the main loop for the game."""
@@ -93,10 +92,28 @@ class AlienInvasion:
             if bullet.rect.bottom <= 0:
                 self.bullets.remove(bullet)
 
+        self._check_bullet_alien_collisions()
+
+    def _check_bullet_alien_collisions(self):
+        """Respond to bullet-alien collisions."""
+        # Remove any bullets and aliens that have collided.
+        collisions = pygame.sprite.groupcollide(
+            self.bullets, self.aliens, True, True
+        )
+
+        if not self.aliens:
+            # Destroy existing bullets and create new fleet.
+            self.bullets.empty()
+            self._create_fleet()
+
     def _update_aliens(self):
         """Check if the fleet is at an edge, then update positions."""
         self._check_fleet_edges()
         self.aliens.update()
+
+        # Look for alien-ship collisions.
+        if pygame.sprite.spritecollideany(self.ship, self.aliens):
+            print("Ship hit!!!")
 
     def _create_fleet(self):
         """Create the fleet of aliens."""
@@ -135,31 +152,6 @@ class AlienInvasion:
         for alien in self.aliens.sprites():
             alien.rect.y += self.settings.fleet_drop_speed
         self.settings.fleet_direction *= -1
-
-    # def _create_star_fleet(self):
-    #     """Create the fleet of stars."""
-    #     # Create a star and keep adding stars until there's no room left.
-    #     # Spacing between stars is one star width and one star height.
-    #     star = Star(self)
-    #     star_width, star_height = star.rect.size
-        
-    #     current_x, current_y = star_width, star_height
-    #     while current_y < (self.settings.screen_height - 3 * star_height):
-    #         while current_x < (self.settings.screen_width - 2 * star_width):
-    #             self._create_star(current_x, current_y)
-    #             current_x += 2 * star_width + randint(-10, 100)
-
-    #         # Finished a row; reset x value, and increment y value.
-    #         current_x = star_width
-    #         current_y += 2 * star_height
-
-    # def _create_star(self, x_position, y_position):
-    #     """Create a star and place it in the row."""
-    #     new_star = Star(self)
-    #     new_star.x = x_position
-    #     new_star.rect.x = x_position
-    #     new_star.rect.y = y_position
-    #     self.stars.add(new_star)
 
     def _update_screen(self):
         """Update images on the screen, and flip to the new screen."""
