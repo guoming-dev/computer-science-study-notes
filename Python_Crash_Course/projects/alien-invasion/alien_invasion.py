@@ -39,8 +39,13 @@ class AlienInvasion:
 
         # Start Alien Invasion in an active state.
         self.game_active = False
+        # Allow player to select the difficulty
+        self.selecting_difficulty = False
 
         self.play_button = Button(self, "Play")
+        self.easy_button = Button(self, "Easy", y_offset=-60)
+        self.normal_button = Button(self, "Normal", y_offset=0)
+        self.hard_button = Button(self, "Hard", y_offset=60)
 
     def run_game(self):
         """Start the main loop for the game."""
@@ -64,24 +69,39 @@ class AlienInvasion:
                 sys.exit()
             elif event.type == pygame.MOUSEBUTTONDOWN:
                 mouse_pos = pygame.mouse.get_pos()
-                self._check_play_button(mouse_pos)
+                
+                if self.selecting_difficulty:
+                    self._check_difficulty_buttons(mouse_pos)
+                else:
+                    self._check_play_button(mouse_pos)
             elif event.type == pygame.KEYDOWN:
                 self._check_keydown_events(event)
             elif event.type == pygame.KEYUP:
                 self._check_keyup_events(event)
     
     def _check_play_button(self, mouse_pos):
-        """Start a new game when the player clicks Play."""
+        """Select difficulty when the player clicks Play."""
         button_clicked = self.play_button.rect.collidepoint(mouse_pos)
         if button_clicked and not self.game_active:
-            # Reset the game settings.
-            self.settings.initialize_dynamic_settings()
+            self.selecting_difficulty = True
+
+    def _check_difficulty_buttons(self, mouse_pos):
+        """Different difficulty levels for the game."""
+        if self.easy_button.rect.collidepoint(mouse_pos):
+            self.settings.speedup_scale = 1.1
+            self._start_game()
+        if self.normal_button.rect.collidepoint(mouse_pos):
+            self.settings.speedup_scale = 1.5
+            self._start_game()
+        if self.hard_button.rect.collidepoint(mouse_pos):
+            self.settings.speedup_scale = 2.0
             self._start_game()
 
     def _start_game(self):
         # Reset the game statistics.
         self.stats.reset_stats()
         self.game_active = True
+        self.selecting_difficulty = False   # Hide difficulty buttons now
 
         # Get rid of any remaining bullets and aliens.
         self.bullets.empty()
@@ -231,13 +251,18 @@ class AlienInvasion:
     def _update_screen(self):
         """Update images on the screen, and flip to the new screen."""
         self.screen.fill(self.settings.bg_color)
-        for bullet in self.bullets.sprites():
-            bullet.draw_bullet()
-        self.ship.blitme()
-        self.aliens.draw(self.screen)
+        if self.selecting_difficulty:
+            self.easy_button.draw_button()
+            self.normal_button.draw_button()
+            self.hard_button.draw_button()
+        elif self.game_active:
+            for bullet in self.bullets.sprites():
+                bullet.draw_bullet()
+            self.ship.blitme()
+            self.aliens.draw(self.screen)
 
         # Draw the play button if the game is inactive.
-        if not self.game_active:
+        else:
             self.play_button.draw_button()
 
         pygame.display.flip()
