@@ -5,6 +5,7 @@ import pygame
 
 from settings import Settings
 from game_stats import GameStats
+from scoreboard import Scoreboard
 from button import Button
 from ship import Ship
 from bullet import Bullet
@@ -26,8 +27,10 @@ class AlienInvasion:
         # self.settings.screen_height = self.screen.get_rect().height
         pygame.display.set_caption("Alien Invasion")
 
-        # Create an instance to store game statistics.
+        # Create an instance to store game statistics, 
+        # and create a scoreboard.
         self.stats = GameStats(self)
+        self.sb = Scoreboard(self)
 
         self.ship = Ship(self)
         self.bullets = pygame.sprite.Group()
@@ -69,7 +72,6 @@ class AlienInvasion:
                 sys.exit()
             elif event.type == pygame.MOUSEBUTTONDOWN:
                 mouse_pos = pygame.mouse.get_pos()
-                
                 if self.selecting_difficulty:
                     self._check_difficulty_buttons(mouse_pos)
                 else:
@@ -100,6 +102,7 @@ class AlienInvasion:
     def _start_game(self):
         # Reset the game statistics.
         self.stats.reset_stats()
+        self.sb.prep_score()
         self.game_active = True
         self.selecting_difficulty = False   # Hide difficulty buttons now
 
@@ -163,6 +166,12 @@ class AlienInvasion:
         collisions = pygame.sprite.groupcollide(
             self.bullets, self.aliens, True, True
         )
+
+        if collisions:
+            for aliens in collisions.values():
+                self.stats.score += self.settings.alien_points * len(aliens)
+            self.sb.prep_score()
+            self.sb.check_high_score()
 
         if not self.aliens:
             # Destroy existing bullets and create new fleet.
@@ -260,6 +269,8 @@ class AlienInvasion:
                 bullet.draw_bullet()
             self.ship.blitme()
             self.aliens.draw(self.screen)
+            # Draw the score information.
+            self.sb.show_score()
 
         # Draw the play button if the game is inactive.
         else:
