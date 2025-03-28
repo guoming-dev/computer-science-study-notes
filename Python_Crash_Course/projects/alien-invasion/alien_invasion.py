@@ -98,7 +98,7 @@ class AlienInvasion:
             self.settings.speedup_scale = 1.3
         if self.hard_button.rect.collidepoint(mouse_pos):
             self.difficulty = "hard"
-            self.settings.speedup_scale = 2.0
+            self.settings.speedup_scale = 1.5
 
         # Load high score now that difficulty is selected
         self.stats.high_score = self.stats.load_high_score_for_difficulty(self.difficulty)
@@ -109,6 +109,8 @@ class AlienInvasion:
         self.stats.reset_stats()
         self.sb.prep_score()
         self.sb.prep_high_score()
+        self.sb.prep_level()
+        self.sb.prep_ships()
         self.game_active = True
         self.selecting_difficulty = False   # Hide difficulty buttons now
 
@@ -184,6 +186,9 @@ class AlienInvasion:
             self.bullets.empty()
             self._create_fleet()
             self.settings.increase_speed()
+            # Increase level.
+            self.stats.level += 1
+            self.sb.prep_level()
 
     def _update_aliens(self):
         """Check if the fleet is at an edge, then update positions."""
@@ -210,6 +215,7 @@ class AlienInvasion:
         if self.stats.ships_left > 0:
             # Decrement ships_left.
             self.stats.ships_left -= 1
+            self.sb.prep_ships()
 
             # Get rid of any remaining bullets and aliens.
             self.bullets.empty()
