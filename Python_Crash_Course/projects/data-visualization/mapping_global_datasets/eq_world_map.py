@@ -4,7 +4,7 @@ import json
 import plotly.express as px
 
 # Read data as a string and convert to a Python object.
-path = Path('./eq_data/eq_data_1_day_m1.geojson')
+path = Path('./eq_data/eq_data_30_day_m1.geojson')
 contents = path.read_text(encoding='utf-8')
 all_eq_data = json.loads(contents)
 
@@ -21,5 +21,11 @@ for eq_dict in all_eq_dicts:
     lats.append(lat)
 
 title = 'Global Earthquakes'
-fig = px.scatter_geo(lat=lats, lon=lons, title=title)
+fig = px.scatter_geo(
+    lat=lats, lon=lons, size=mags, title=title,
+    color=mags,
+    color_continuous_scale='plasma',
+    labels={'color': 'Magnitude'},
+    projection='natural earth',
+)
 fig.show()
