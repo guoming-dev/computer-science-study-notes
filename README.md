@@ -33,7 +33,7 @@ Each folder represents a **different learning resource** I’m using (e.g., CS50
 
 ## 📂 Repository Structure
 
-I recently completed the Python portion of my journey using *Python Crash Course (3rd Edition) and have now transitioned into **web development** using *[Colt Steele's Web Developer Bootcamp 2025](https://www.udemy.com/course/the-web-developer-bootcamp/)* course on Udemy. A new folder has been added to document this phase.
+I recently completed the Python portion of my journey using *Python Crash Course (3rd Edition)* and have now transitioned into **web development** using *[Colt Steele's Web Developer Bootcamp 2025](https://www.udemy.com/course/the-web-developer-bootcamp/)* course on Udemy. A new folder has been added to document this phase.
 
 ```markdown
 /computer-science-study-notes
