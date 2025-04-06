@@ -1,5 +1,7 @@
 # 📚 Computer Science Study Notes - Ultralearning Journey 
 
+🎉 **Milestone Unlocked on Day 96**: Completed Python Foundation - Now entering Web Development!
+
 Welcome to my **Computer Science Study Notes** repository! This repository documents my **self-directed ultralearning journey** in Computer Science, inspired by Scott H. Young's **Metalearning Framework**.
 
 Rather than following a traditional degree path, I am structuring my learning using the **WHY, WHAT, HOW** framework, breaking down concepts for **deep understanding and retention**.
@@ -31,7 +33,7 @@ Each folder represents a **different learning resource** I’m using (e.g., CS50
 
 ## 📂 Repository Structure
 
-Currently, I am working on projects from **Python Crash Course (3rd Edition)**. More folders will be added as I explore new topics.
+I recently completed the Python portion of my journey using *Python Crash Course (3rd Edition) and have now transitioned into **web development** using *[Colt Steele's Web Developer Bootcamp 2025](https://www.udemy.com/course/the-web-developer-bootcamp/)* course on Udemy. A new folder has been added to document this phase.
 
 ```markdown
 /computer-science-study-notes
@@ -39,8 +41,12 @@ Currently, I am working on projects from **Python Crash Course (3rd Edition)**. 
     |--- CS50P/ (Notes and exercises from *Harvard's CS50P course*)
     |--- Python_Crash_Course/ (Projects from *Python Crash Course (3rd Edition)*)
          |--- projects
-              |--- alien-invasion/ (Project files and metalearning notes)
-              |--- More projects to be added...
+              |--- alien-invasion/ 
+              |--- data-visualization/ 
+    |--- Web_Development_Bootcamp/ (New phase: Colt Steele's *The Web Developer Bootcamp 2025*)
+         |--- projects
+         |--- Metalearning_Notes/
+              |--- WHY_WHAT_HOW_template.md
     |--- (More folders to be added as I progress)
 ```
 
