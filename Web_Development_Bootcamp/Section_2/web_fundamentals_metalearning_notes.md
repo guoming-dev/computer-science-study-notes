@@ -21,6 +21,8 @@ To build anything on the web, from personal blog to a SaaS product, you must und
 
 🧪 **Feynman Explanation**: Imagine mailing a letter to a friend - you write their address, a post office routes it, and your friend receives it. The internet does the same, but with computers and data packets.
 
+---
+
 ### 2. HTTP Request/Response Cycle 🔁
 
 > "When you visit a site, it's like placing an order at a restaurant. You ask (request), the server cooks (processes), and you get your food (response)."
@@ -35,6 +37,8 @@ To build anything on the web, from personal blog to a SaaS product, you must und
 
 🧪 **Feynman Explanation**: Think of it like ordering food. You ask the waiter (browser) for a dish (website), he takes the order to the chef (server), and brings the meal (HTML/CSS/JS) back.
 
+---
+
 ### 3. Intro to the Web 🌍
 
 > "The web is the software layer of the internet that lets us view and interact with sites."
@@ -46,6 +50,8 @@ To build anything on the web, from personal blog to a SaaS product, you must und
 - Everything you see on a webpage is built using HTML, styles with CSS, and powered by JavaScript.
   
 🧪 **Feynman Explanation**: If the internet is the road system, then the web is like the bustling city built on top of it - with shops, homes, traffic, and all the action we interact with daily.
+
+---
 
 ### 4. HTML, CSS, JS: The Trio of the Web 💻
 
