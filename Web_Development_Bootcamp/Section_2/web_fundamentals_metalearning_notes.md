@@ -44,4 +44,25 @@ To build anything on the web, from personal blog to a SaaS product, you must und
   - Web = software built on top (websites, browsers, HTML)
 - The browser (Chrome, Firefox) is your window to the web.
 - Everything you see on a webpage is built using HTML, styles with CSS, and powered by JavaScript.
+  
+🧪 **Feynman Explanation**: If the internet is the road system, then the web is like the bustling city built on top of it - with shops, homes, traffic, and all the action we interact with daily.
 
+### 4. HTML, CSS, JS: The Trio of the Web 💻
+
+> "Websites are made of structure (HTML), style (CSS), and behavior (JS)."
+
+- **HTML (HyperText Markup Language)**: The skeleton. It tells the browser what things are (headings, paragraphs, images).
+- **CSS (Cascading Style Sheets)**: The skin and clothes. It makes things look good (colors, layout, fonts).
+- **JavaScript**: The brain and movement. It makes things interactive (click buttons, animations, forms).
+
+---
+
+## 🧰 Strategy + Method (How to learn?)
+
+|Principles|Applied To|
+|----------|----------|
+|Direct Practice|Rebuild simple websites using just HTML/CSS first, then add JS.|
+|Drill|Focus on just DNS and HTTP codes for a day to master core mechanisms.
+|Retrieval|Use flashcards: "What's the role of DNS?" or "What happens after you hit enter in the browser?"|
+|Overlearning|Re-explain these topics by writing a blog post or teaching others|
+|Feedback|Use DevTools to check real HTTP requests and responses.|
