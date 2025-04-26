@@ -4,3 +4,5 @@
 __pycache__/
 .pytest_cache
 *.pdf
+Web_Development_Bootcamp/Other_Properties/*
+Web_Development_Bootcamp/Flexbox_And_Responsive/*
